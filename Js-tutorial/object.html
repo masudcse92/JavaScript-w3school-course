@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Object</title>
+</head>
+<body>
+
+    <h2>JS object</h2>
+
+    <script>
+        const car = {
+            name: "Fiat",
+            model: 500,
+            weight: "890kg",
+            color: "White",
+            start: function (){
+                console.log("Car has started");
+            },
+            drive: function () {
+                console.log("Car is driving");
+            }
+        };
+
+        console.log(car.weight);
+        console.log(car.color);
+
+        car.start();
+    </script>
+    
+</body>
+</html>

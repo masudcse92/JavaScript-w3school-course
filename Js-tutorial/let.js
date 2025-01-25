@@ -1,3 +1,6 @@
-let x = "John Doe";
+if(true) {
+    let x = 6;
+    console.log(x);
+}
 
-let x = 0;
+console.log(x);

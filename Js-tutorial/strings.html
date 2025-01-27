@@ -10,6 +10,8 @@
     <h2>JS: Strings</h2>
 
     <p id="demo"></p>
+    <p id="demo1">Please visit Microsoft and Microsoft!</p>
+    <button onclick="myFunction()">Try it</button>
     
     <script>
         let carName1 = "Volvo XC60";
@@ -97,6 +99,14 @@
         let r = tx1 +" "+tx2;
 
         console.log(r);
+
+
+        // replace 
+
+        function myFunction(){
+            let tr = document.getElementById("demo1").innerHTML;
+            document.getElementById("demo1").innerHTML = tr.replace("Microsoft", "W3Schools");
+        }
 
     </script>
 

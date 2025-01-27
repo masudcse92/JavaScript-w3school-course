@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript : Strings</title>
+</head>
+<body>
+
+    <h2>JS: Strings</h2>
+
+    <p id="demo"></p>
+    
+    <script>
+        let carName1 = "Volvo XC60";
+        let carName2 = 'Volvo Xc60';
+
+        document.getElementById("demo").innerHTML = carName1 + "<br> "+ carName2;
+
+        "<br>";
+
+        // string length 
+
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZE";
+        
+        console.log(text.length);
+
+        // Templates Strings 
+
+        let text1 = 
+
+        `
+        The quick
+        brown fox
+        jups over
+        the lazy dog
+        `;
+
+        console.log(text1);
+
+        // Object Strings 
+
+        let x = "John";
+
+        let y = new String("John");
+
+        console.log(x);
+        console.log(typeof y);
+
+        // String operator 
+
+        let x1 = "John";
+
+        let y1 = new String("John");
+
+        console.log(x1==y1);
+
+
+
+        // Note the difference between (x==y) and (x===y).
+
+        let x2 = new String("John");
+        let y2 = new String("John");
+
+        console.log(x2==y2);
+
+        // Strings Slice 
+
+        // There are 3 methods for extracting a part of a string:
+
+        // slice(start, end)
+        // substring(start, end)
+        // substr(start, length)
+
+        let txt = "Apple, Banana, Kiwi";
+        let part = txt.slice(7);
+
+        console.log(part);
+
+        // Converting to Upper and Lower Case
+
+        let txt1 = "Hello World";
+        let txt2 = txt1.toUpperCase();
+
+        console.log(txt2);
+
+       let t1 = "Hello World: Lower Case";
+       let t2 = t1.toLowerCase();
+       console.log(t1)
+
+        // Strings : The concat() Method
+
+        let tx1 = "Hello";
+        let tx2 = "World";
+        
+        // let r = tx1.concat(" ", tx2);
+        let r = tx1 +" "+tx2;
+
+        console.log(r);
+
+    </script>
+
+    
+</body>
+</html>

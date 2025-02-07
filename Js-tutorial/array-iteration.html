@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Array method: Iteration</h2>
+
+    <script>
+        const numbers = [45, 5, 29, 50, 32, 9];
+
+        function myFunction(value){
+            return value * 2;
+        }
+        // flatMap Array 
+        const newArr = numbers.map(myFunction);
+        console.log(newArr);
+
+        const myArr = [1, 2, 3, 4, 5,6];
+
+        const newArrs = myArr.flatMap(x=> [x, x * 10]);
+        console.log(newArrs);
+
+        // Filter() Array 
+
+        function myFilterFunction(value){
+            return value < 18;
+        }
+
+        const newNumbers = numbers.filter(myFilterFunction);
+
+        console.log(newNumbers);
+
+        // Array reduce()
+
+        const rNumber = [45, 4, 9, 16, 25];
+        function myReduceFunction(total, value, index, array){
+            console.log(total);
+            console.log("----");
+            return total + value;
+        }
+
+        const newRnumber = rNumber.reduce(myReduceFunction);
+        console.log(newRnumber);
+
+
+    </script>
+    
+</body>
+</html>

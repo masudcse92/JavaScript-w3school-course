@@ -24,7 +24,7 @@
 
         console.log(points[points.length -1])
 
-        // Array toSorted()
+        // Array toSorted() toReversed()
 
         const months = ["Jan", "Fab", "Mar", "Apr"];
         const sorted = months.toSorted();
@@ -32,6 +32,16 @@
 
         console.log(sorted);
         console.log(reversed);
+
+        // Array Math.random()
+
+        function myFunction() {
+            points.sort(function(){
+                return 0.5 -Math.random()
+            });
+        }
+
+
 
     </script>
 
